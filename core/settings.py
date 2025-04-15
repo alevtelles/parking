@@ -40,6 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # Django Rest Framework
+    'rest_framework',
+
     # Apps da aplicação
     'customers',
     'vehicles',
