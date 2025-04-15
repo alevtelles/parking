@@ -1,3 +1,4 @@
 # Sistema de Gestão de Estacionamento
 
-<img src="./static/images/logo.svg">
+![Logo do projeto](./static/images/logo.png)
+<img src="./static/images/logo.png">
