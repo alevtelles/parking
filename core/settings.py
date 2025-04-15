@@ -42,8 +42,10 @@ INSTALLED_APPS = [
 
     # Django Rest Framework
     'rest_framework',
+    'rest_framework_simplejwt',
 
     # Apps da aplicação
+    'authentication'
     'customers',
     'vehicles',
     'parking',
@@ -283,4 +285,14 @@ JAZZMIN_SETTINGS = {
     # "changeform_format_overrides": {"auth.user": "collapsible", "auth.group": "vertical_tabs"},
     # Add a language dropdown into the admin
     # "language_chooser": True,
+}
+
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ],
+    'DEFAULT_PERMISSION_CLASSES': [  
+        'rest_framework.permissions.IsAuthenticated',  
+    ]
 }
